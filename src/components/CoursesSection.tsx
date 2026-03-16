@@ -1,20 +1,25 @@
-import { BarChart3, Clock, Cloud } from "lucide-react";
+import { BarChart3, Clock, Database, Code } from "lucide-react";
 
 const courses = [
   {
     icon: BarChart3,
     title: "Data Analytics",
-    description: "Master data analysis techniques and create compelling visualizations.",
+    description: "A comprehensive program covering Power BI, SQL, Python, and Azure Data Tools. Master end-to-end data analysis from data collection to actionable insights.",
   },
   {
     icon: Clock,
     title: "Power BI",
-    description: "Learn to build interactive dashboards and real-time visualizations.",
+    description: "Build interactive dashboards, create DAX measures, and transform raw data into stunning visual reports for business decision-making.",
   },
   {
-    icon: Cloud,
-    title: "Microsoft Azure",
-    description: "Gain expertise in cloud computing and Azure data services.",
+    icon: Database,
+    title: "SQL",
+    description: "Learn to write complex queries, manage relational databases, and perform data manipulation to extract meaningful insights from large datasets.",
+  },
+  {
+    icon: Code,
+    title: "Python with PySpark",
+    description: "Master Python programming and PySpark for big data processing, automation, and scalable data engineering pipelines.",
   },
 ];
 
@@ -25,7 +30,7 @@ const CoursesSection = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">
           LEARN DATA SKILLS, BUILD YOUR FUTURE
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {courses.map((course) => (
             <div
               key={course.title}
