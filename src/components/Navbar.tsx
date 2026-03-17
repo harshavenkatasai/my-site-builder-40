@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="#enroll" className="px-5 py-2 bg-secondary text-foreground rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">ENROLL NOW</a>
+          <a href="https://forms.gle/2QxkPazAorFYsQKF9" target="_blank" rel="noopener noreferrer" className="px-5 py-2 bg-secondary text-foreground rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">ENROLL NOW</a>
           <a href="https://chat.whatsapp.com/DV7HpnTSRWo5MpqaUYDLxy" target="_blank" rel="noopener noreferrer" className="px-5 py-2 bg-accent text-accent-foreground rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">CONTACT US</a>
         </div>
 
