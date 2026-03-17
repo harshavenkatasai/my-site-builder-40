@@ -17,7 +17,7 @@ const HeroSection = () => {
           Empowering Gen Z with cutting-edge data skills for a tech-driven future
         </p>
         <div className="flex gap-4 mt-8">
-          <a href="#enroll" className="px-7 py-3 bg-primary text-primary-foreground rounded-full font-semibold text-sm hover:opacity-90 transition-opacity">
+          <a href="https://forms.gle/2QxkPazAorFYsQKF9" target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-primary text-primary-foreground rounded-full font-semibold text-sm hover:opacity-90 transition-opacity">
             ENROLL NOW
           </a>
           <a href="https://chat.whatsapp.com/DV7HpnTSRWo5MpqaUYDLxy" target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-secondary text-foreground rounded-full font-semibold text-sm hover:opacity-90 transition-opacity">
