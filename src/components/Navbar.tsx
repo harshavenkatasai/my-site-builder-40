@@ -40,7 +40,7 @@ const Navbar = () => {
           <a href="#contact" className="block text-sm font-medium">Contact</a>
           <div className="flex gap-3 pt-2">
             <a href="#enroll" className="px-5 py-2 bg-secondary text-foreground rounded-full text-sm font-semibold">ENROLL NOW</a>
-            <a href="#contact" className="px-5 py-2 bg-accent text-accent-foreground rounded-full text-sm font-semibold">CONTACT US</a>
+            <a href="https://chat.whatsapp.com/DV7HpnTSRWo5MpqaUYDLxy" target="_blank" rel="noopener noreferrer" className="px-5 py-2 bg-accent text-accent-foreground rounded-full text-sm font-semibold">CONTACT US</a>
           </div>
         </div>
       )}

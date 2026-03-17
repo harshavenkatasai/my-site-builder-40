@@ -20,7 +20,7 @@ const HeroSection = () => {
           <a href="#enroll" className="px-7 py-3 bg-primary text-primary-foreground rounded-full font-semibold text-sm hover:opacity-90 transition-opacity">
             ENROLL NOW
           </a>
-          <a href="#contact" className="px-7 py-3 bg-secondary text-foreground rounded-full font-semibold text-sm hover:opacity-90 transition-opacity">
+          <a href="https://chat.whatsapp.com/DV7HpnTSRWo5MpqaUYDLxy" target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-secondary text-foreground rounded-full font-semibold text-sm hover:opacity-90 transition-opacity">
             CONTACT US
           </a>
         </div>
