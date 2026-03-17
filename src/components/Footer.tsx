@@ -18,7 +18,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-primary-foreground/60">
               <li><a href="#courses" className="hover:text-primary-foreground transition-colors">Courses</a></li>
               <li><a href="#about" className="hover:text-primary-foreground transition-colors">About</a></li>
-              <li><a href="#contact" className="hover:text-primary-foreground transition-colors">Contact</a></li>
+              <li><a href="https://chat.whatsapp.com/DV7HpnTSRWo5MpqaUYDLxy" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">Contact Us</a></li>
               <li><a href="#" className="hover:text-primary-foreground transition-colors">Blog</a></li>
             </ul>
           </div>
