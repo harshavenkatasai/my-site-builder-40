@@ -1,5 +1,6 @@
 import { BarChart3, Clock, Database, Code } from "lucide-react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import {
   Dialog,
   DialogContent,
@@ -166,13 +167,23 @@ const CoursesSection = () => {
   return (
     <section id="courses" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5 }}
+          className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12"
+        >
           LEARN DATA SKILLS, BUILD YOUR FUTURE
-        </h2>
+        </motion.h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {courses.map((course) => (
-            <div
+          {courses.map((course, index) => (
+            <motion.div
               key={course.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-card border border-border rounded-xl p-8 text-center hover:shadow-lg transition-shadow"
             >
               <div className="w-14 h-14 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
@@ -190,7 +201,7 @@ const CoursesSection = () => {
               >
                 View Course
               </button>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const HeroSection = () => {
@@ -7,7 +8,12 @@ const HeroSection = () => {
         <img src={heroBanner} alt="Students learning data skills" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-hero/60" />
       </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 md:py-40">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="relative z-10 max-w-7xl mx-auto px-6 py-32 md:py-40"
+      >
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight max-w-2xl">
           DATA SKILLS <span className="font-light opacity-80">FOR THE</span>
           <br />
@@ -24,7 +30,7 @@ const HeroSection = () => {
             CONTACT US
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

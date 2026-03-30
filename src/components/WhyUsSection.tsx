@@ -1,4 +1,5 @@
 import { GraduationCap, Building2, Target, Award } from "lucide-react";
+import { motion } from "framer-motion";
 
 const reasons = [
   {
@@ -27,13 +28,23 @@ const WhyUsSection = () => {
   return (
     <section id="why-us" className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5 }}
+          className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12"
+        >
           WHY DATAGENZ ACADEMY?
-        </h2>
+        </motion.h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {reasons.map((reason) => (
-            <div
+          {reasons.map((reason, index) => (
+            <motion.div
               key={reason.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-lg transition-shadow"
             >
               <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center">
@@ -41,7 +52,7 @@ const WhyUsSection = () => {
               </div>
               <h3 className="text-base font-bold text-foreground mb-2">{reason.title}</h3>
               <p className="text-muted-foreground text-sm">{reason.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
         <div className="text-center mt-12">
