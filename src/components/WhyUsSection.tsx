@@ -1,4 +1,5 @@
 import { GraduationCap, Building2, Target, Award } from "lucide-react";
+import { motion } from "framer-motion";
 
 const reasons = [
   {
