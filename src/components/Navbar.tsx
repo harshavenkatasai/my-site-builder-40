@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 import {
   Sheet,
   SheetContent,
@@ -17,7 +18,7 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-nav text-primary-foreground">
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center font-bold text-sm text-foreground">D</div>
+            <img src={logo} alt="DataGenZ Academy Logo" className="w-8 h-8 rounded-lg object-contain" />
             <div className="leading-tight">
               <span className="font-bold text-sm tracking-wide">DataGenZ</span>
               <span className="block text-[10px] tracking-[0.25em] uppercase opacity-80">Academy</span>
