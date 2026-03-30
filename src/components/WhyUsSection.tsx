@@ -52,7 +52,7 @@ const WhyUsSection = () => {
               </div>
               <h3 className="text-base font-bold text-foreground mb-2">{reason.title}</h3>
               <p className="text-muted-foreground text-sm">{reason.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
         <div className="text-center mt-12">

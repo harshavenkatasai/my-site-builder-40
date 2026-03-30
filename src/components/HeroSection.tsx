@@ -30,7 +30,7 @@ const HeroSection = () => {
             CONTACT US
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

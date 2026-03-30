@@ -201,7 +201,7 @@ const CoursesSection = () => {
               >
                 View Course
               </button>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
