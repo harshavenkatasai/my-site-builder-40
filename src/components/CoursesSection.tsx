@@ -1,5 +1,6 @@
 import { BarChart3, Clock, Database, Code } from "lucide-react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import {
   Dialog,
   DialogContent,
