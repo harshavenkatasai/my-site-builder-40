@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 import {
   Sheet,
   SheetContent,
