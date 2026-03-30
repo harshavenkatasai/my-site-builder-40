@@ -31,6 +31,16 @@ const HeroSection = () => {
           </a>
         </div>
       </motion.div>
+
+      <div className="absolute bottom-0 left-0 right-0 bg-secondary overflow-hidden">
+        <div className="animate-marquee whitespace-nowrap py-2.5">
+          {[...Array(6)].map((_, i) => (
+            <span key={i} className="mx-12 text-sm font-semibold text-foreground inline-block">
+              🎓 Attend Our Free Demo Session This Saturday! 04/04/2026 &nbsp;•&nbsp; 🎓 Attend Our Free Demo Session This Saturday! 04/04/2026
+            </span>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
