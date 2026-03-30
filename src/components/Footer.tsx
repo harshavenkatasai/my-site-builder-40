@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center font-bold text-sm text-foreground">D</div>
+                <img src={logo} alt="DataGenZ Academy Logo" className="w-8 h-8 rounded-lg object-contain" />
                 <span className="font-bold">DataGenZ Academy</span>
               </div>
               <p className="text-sm text-primary-foreground/60 max-w-xs">
