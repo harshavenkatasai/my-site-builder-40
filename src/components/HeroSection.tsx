@@ -20,7 +20,7 @@ const HeroSection = () => {
           <span className="font-extrabold">NEXT GENERATION</span>
         </h1>
         <p className="mt-4 text-primary-foreground/80 text-base md:text-lg max-w-md">
-          Empowering Gen Z with cutting-edge data skills for a tech-driven future
+          Empowering A-Z Generations with cutting-edge data skills for a tech-driven future
         </p>
         <div className="flex gap-4 mt-8">
           <a href="https://forms.gle/2QxkPazAorFYsQKF9" target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-primary text-primary-foreground rounded-full font-semibold text-sm hover:opacity-90 transition-opacity">
