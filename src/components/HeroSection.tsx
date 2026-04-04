@@ -36,7 +36,7 @@ const HeroSection = () => {
         <div className="animate-marquee whitespace-nowrap py-2.5">
           {[...Array(6)].map((_, i) => (
             <span key={i} className="mx-12 text-sm font-semibold text-foreground inline-block">
-              🎓 Attend Our Free Demo Session This Saturday! 04/04/2026 &nbsp;•&nbsp; 🎓 Attend Our Free Demo Session This Saturday! 04/04/2026
+              🎓 Hurry! Enroll Now – Admissions Closing Soon! | Start Your Journey Today with Expert Guidance!
             </span>
           ))}
         </div>
