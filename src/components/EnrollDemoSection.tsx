@@ -4,7 +4,15 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { GraduationCap, Loader2 } from "lucide-react";
+import { GraduationCap, Loader2, CheckCircle2 } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const GOOGLE_FORM_ACTION =
   "https://docs.google.com/forms/d/e/1FAIpQLScGX3OKUBUwDKLRf18ArLuNqPCcvIulsnVMIJWO9uV8_2RoXg/formResponse";
@@ -18,6 +26,7 @@ const FIELDS = {
 const EnrollDemoSection = () => {
   const { toast } = useToast();
   const [submitting, setSubmitting] = useState(false);
+  const [successOpen, setSuccessOpen] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", mobile: "" });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -40,10 +49,7 @@ const EnrollDemoSection = () => {
         body,
       });
 
-      toast({
-        title: "Enrollment received! 🎉",
-        description: "We'll reach out shortly with demo details.",
-      });
+      setSuccessOpen(true);
       setForm({ name: "", email: "", mobile: "" });
     } catch {
       toast({
@@ -141,6 +147,25 @@ const EnrollDemoSection = () => {
           </Card>
         </div>
       </div>
+
+      <Dialog open={successOpen} onOpenChange={setSuccessOpen}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <div className="mx-auto mb-3 inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary">
+              <CheckCircle2 className="w-8 h-8" />
+            </div>
+            <DialogTitle className="text-center text-2xl">You are enrolled! 🎉</DialogTitle>
+            <DialogDescription className="text-center text-base pt-2">
+              You are enrolled and my HR team will share you session details in email/WhatsApp.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="sm:justify-center">
+            <Button onClick={() => setSuccessOpen(false)} size="lg" className="w-full sm:w-auto">
+              Got it
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
